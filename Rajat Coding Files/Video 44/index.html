@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Exercise 6</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+    <style>
+        .nav {
+            padding: 25px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: large;
+            font-family: "Poppins", sans-serif;
+            ;
+
+        }
+
+        div ul {
+            list-style: none;
+            display: flex;
+            gap: 34px;
+            cursor: pointer;
+        }
+
+        div img {
+            height: 16vh;
+        }
+
+        svg {
+            height: 13px;
+            width: 13px;
+            cursor: pointer;
+        }
+
+        .grid {
+            display: grid;
+            justify-content: space-evenly;
+            align-items: normal;
+            grid-template-columns: 67px 67px 200px;
+            grid-template-rows: 222px 225px 230px;
+
+        }
+
+        .eng {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        button {
+            position: relative;
+            top: 70px;
+            color: rgb(75, 213, 75);
+            background-color: #5cb85c;
+            text-decoration: none;
+            border-radius: 5px;
+            border: 1px solid;
+            height: 35px;
+            width: 134px;
+            font-size: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+
+
+        .french {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .french3 {
+
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+
+        }
+
+        .german4 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+
+        }
+
+        .german {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .italy5 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        .pizza {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+
+
+
+        .portugese6 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        .portu {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .spanish7 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        .spain {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .japanese8 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        .tokyo {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .korean9 {
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+
+        .seoul {
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI';
+        }
+
+        .chinese10{
+             padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;
+        }
+        .chinichutiye{
+             color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI'; 
+        }
+        .puranichinese{
+            padding: 30px;
+            font-size: 16px;
+            height: 140px;
+            width: 185px;
+            text-align: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            font-family: "Poppins";
+            font-weight: bolder;   
+        }
+        .chini{
+             color: rgb(255, 255, 255);
+            text-decoration: none;
+            color: white;
+            font-weight: 500;
+            font-size: 12px;
+            font-family: 'Segoe UI'; 
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="nav">
+                <img src="image.png" alt="">
+                <ul>
+                    <li>Product <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Pricing <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Resources <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                    <li>Our Customer <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"
+                            color="#000000" fill="none">
+                            <path d="M18 9.00005C18 9.00005 13.5811 15 12 15C10.4188 15 6 9 6 9" stroke="#141B34"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <div class="grid">
+        <div class="eng">
+            English
+            <button>
+                <a href="ue_english_64.exe"> Download 64-Bit </a>
+            </button>
+        </div>
+
+        <div class="french3">
+            French
+            <button class="french">
+                <a class="french" href="ue_french_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+        <div class="german4">
+            German
+            <button class="german">
+                <a href="ue_german_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+        <div class="italy5">
+            Italy
+            <button class="pizza">
+                <a class="meloni" href="ue_italian_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+
+        <div class="portugese6">
+            Portuguese
+            <button class="portu">
+                <a href="ue_portuguese_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+        <div class="spanish7">
+            Spanish
+            <button class="spain">
+                <a href="ue_spanish_64.exe">Download Spanish</a>
+            </button>
+        </div>
+
+        <div class="japanese8">
+            Japanese
+            <button class="tokyo">
+                <a href="ue_japanese_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+        <div class="korean9">
+            Korean
+            <button class="seoul">
+                <a href="ue_korean_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+        <div class="chinese10">
+            Chinese
+            <button class="chini chutiye">
+                <a href="ue_chinese_64.exe">Download 64-Bit</a>
+            </button>
+        </div>
+
+        <div class="puranichinese">
+            Traditional Chinese
+            <button class="chini">
+                <a href="ue_chinese_traditional_64.exe">Dowanload 64-Bit</a>
+            </button>
+        </div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity</title>
+    <style>
+        h1 {
+            color: blanchedalmond;
+        }
+
+        .yellow {
+            color: black;
+        }
+
+        .red {
+            color: brown;
+        }
+
+        .purple {
+            color: rgb(19, 134, 154);
+        }
+
+        #green {
+            color: coral;
+        }
+        [data-c=f]{
+            color: rgb(255, 26, 240);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1  class="yellow red purple" data-c="f">hello its your freeking boy</h1>
+    </div>
+</body>
+
+</html>

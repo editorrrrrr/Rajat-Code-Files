@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THIS IS MY WEBSITE</title>
+</head>
+
+<body>
+    <style>
+        /* Element Selectors  */
+        div {
+            color: rgb(255, 0, 0);
+            background-color: aquamarine;
+        }
+        /* class selectors */
+        .yellow {
+            background-color: antiquewhite;
+            color: dodgerblue;
+        }
+        /* id selector */
+        #pila{
+            color: rgb(19, 224, 57);
+            background-color: rgb(220, 18, 156);
+        }
+        /* child selector  */
+        div > p{
+            color: rgb(215, 11, 11);
+            background-color: rgb(21, 146, 235);
+        }
+        /* descendant selectors */
+        div p{
+            background-color: blanchedalmond;
+            color: hotpink;
+        }
+        /* universal selector  */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        a:visited{
+            color: green;
+        }
+        a:link{
+            color: orange;
+        }
+        a:active{
+            background-color: rgb(213, 19, 16);
+        }
+        a:hover{
+            color: mediumslateblue;
+            background-color: black;
+        }
+    </style>
+    <div>
+        You Are a great personality
+    </div>
+
+    <div class="yellow">
+        you are the boss aren't you?
+    </div>
+
+    <div id="pila">
+        are u sick off it?
+    </div>
+    <div>
+        are you okay?
+        <p>yes i'm okay</p>
+    </div>
+
+    <div>
+        Are you good 
+        <article>
+            hello
+            <p>Lorem ipsum dolor sit.</p>
+        </article>
+    </div>
+
+    <div>
+        hello
+        <a target="_blank" href="https://www.google.com"> go to google</a>
+        <a target="_blank" href="https://www.youtube.com"> go to youtube</a>
+        <a target="_blank" href="https://www.amazon.com"> go to amazon</a>
+    </div>
+</body>
+
+</html>

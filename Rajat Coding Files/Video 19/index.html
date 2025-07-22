@@ -4,24 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Font,Text,Color</title>
+    <title>CSS font and color</title>
     <style>
-        p {
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            font-style:italic;
-            font-weight:900;
-            text-decoration:line-through;
+        @import url('https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Hand+Pre:wght@400..700&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+        h1 {
+            font-family:"oswald" ;
+            text-transform: capitalize;
+            font-style: italic;
+            color: brown;
+           font-size: 50px;
+           text-decoration:underline;
+           text-decoration-color: aqua;
+           text-decoration-style: wavy;
+           text-decoration-thickness: 7px;
+           text-align:center;
+           
         }
-        h1{
-            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+        h2 {
+            font-family: cursive;
+            font-weight: 400px;
+            font-style: italic;
+            text-decoration: underline;
+            text-decoration-color: rgb(212, 5, 5);
+            color: rgb(7, 14, 14);
+            font-size: 40px;
+           
+        }
+
+        p {
+            font-family: "Edu VIC WA NT Hand Pre", cursive;
+            font-style: italic;
+        }
+        .jhola{
+            border: 4px solid red;
+            width: 400px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 40px;
+            /* text-overflow: clip;
+            overflow:unset; */
+            word-break: break-all;
+        text-decoration-thickness: 140px;
+        
         }
     </style>
 </head>
 
 <body>
     <div>
-        <h1>Are you okay?</h1>
-        <p>YES I'M GOOD</p>
+        <h1>i am the boss</h1>
+        <h2>hello i'm your boy who knows nothing about you </h1>
+            <p>and i am also know nothing about you bcz you are my truly friend that hides everything from me </p>
+<p class="jhola">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis maiores sunt aperiam corrupti aut tempore, suscipit nihil vitae laboriosam dolore molestiae ab quas illum vero maxime. Hic ad labore architecto, at distinctio explicabo laboriosam similique quasi suscipit voluptatum in ratione aspernatur? Soluta maxime provident non.</p>
     </div>
 </body>
 

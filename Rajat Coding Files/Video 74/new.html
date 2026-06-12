@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Bubbling</title>
+    <style>
+        .child {
+            background-color: beige;
+            padding: 13px;
+            margin: 13px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .childContainer {
+            background-color: rgb(219, 90, 9);
+            padding: 13px;
+            margin: 13px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+
+        .Container {
+            background-color: rgb(15, 165, 235);
+            padding: 13px;
+            margin: 13px;
+            border: 2px solid black;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+     <audio class="clicksound1" src="fahhhhhhhhhhhhhh.mp3"></audio> 
+    <audio class="clicksound2" src="romanceeeeeeeeeeeeee.mp3"></audio>
+    <audio class="clicksound3" src="chicken-screaming-on-tree-loud-warning.mp3"></audio>
+     
+    <div class="Container">
+        i am chicken-screaming-on-tree-loud-warning
+        <section class="childContainer">
+            i am romanceeeeeeeeeeeeee
+            <div class="child">
+                hey i am fahhhhhhhhhhhhhh
+            </div>
+        </section>
+    </div>
+    <script>
+        document.querySelector(".child").addEventListener("click", (e) => {
+            e.stopPropagation()
+            // alert("child was clicked")
+            document.querySelector(".clicksound1").play()
+
+
+        })
+        document.querySelector(".childContainer").addEventListener("click", (e) => {
+            e.stopPropagation()
+            // alert("childcontainer was clicked")
+            document.querySelector(".clicksound2").play()
+
+        })
+        document.querySelector(".Container").addEventListener("click", (e) => {
+
+            // alert("container was clicked")
+            document.querySelector(".clicksound3").play()
+
+        })
+    </script>
+
+</body>
+
+</html>

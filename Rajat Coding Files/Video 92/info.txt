@@ -1,0 +1,29 @@
+so in this video we will learn about templates in express (ejs) it is the most known templates in coding world especially it is used with express js so it is recommend to use it with express
+
+we use templates to put variable in templates like index.html or in simple language we use templates to show our variable in search bar to get query by client 
+
+There are many types of templates engine like PUG or Handle Bars but here we chose ejs because it will clear our concept and later will help with in learning react js
+
+
+Now the main part is how to create it first create a js file including express because we are using it with express then set the engine we want to show using (app.set) then we will write the variable name we want to then will simply add these into html file and you have done WRONG THING it will show so much error 
+WHYYY????
+
+Because to use ejs we dont want html file now we WANT ejs (index.ejs) and the templates we are saying multiple times since we start this tutorial will not be work so now we have to create (views) as folder instead of templates and use wherever u want just type the variable name instead of the other variable and boom u are only variable name the the value will not be show 
+WHYYY? 
+To get the value not variable name we use (<%= foo %>) write your variable name in the place of foo 
+Congratulation You Have create your first templates using ejs in express js
+
+we have forgotten one thing that is how we will put the variable name into templates 
+the answer is we will use (.render)   it is like (.send)  in express to send response we send for this we will use (.render)
+
+{siteName:siteName, searchText:searchText }  we dont need to type all this shit if we write only first name it will get the other if the name is same
+
+<%- include('user/show', {user: user}); %>
+
+new syntax by using this we can include any templates to any file and from here we can customize the variable and value 
+
+
+
+
+ok so this is beyond the video i am writing it for my knowledge i saw on one video 
+FEAR stands for False Evidence Appearing Real

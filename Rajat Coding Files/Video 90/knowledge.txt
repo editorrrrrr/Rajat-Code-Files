@@ -1,0 +1,1 @@
+so in this video we learn about how to create middleware and import it into the file so when we create a middleware file we have three option first one is req which is given by client , second is response which will go to the client , third one is next next is the process where the first middleware passes to next. This is Middleware 

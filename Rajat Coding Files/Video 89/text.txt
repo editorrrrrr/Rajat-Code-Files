@@ -1,0 +1,13 @@
+// we can create a chain like structure in our server shown in this code above
+
+
+// app.get('/', (req, res) => {
+//   console.log("Hey its a get request")
+//   res.send('Hello World i am get request!')
+// }).post('/', (req, res) => {
+//   console.log("Hey its a post request")
+//   res.send("Hello world i am post request!")
+// }).put('/', (req, res) => {
+//   console.log("Hey its a put request")
+//   res.send("Hello world i am put request!")
+// })

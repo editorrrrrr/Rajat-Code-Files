@@ -1,0 +1,43 @@
+Today we will move towards the living organism of a website that is data base we will learn how database created how it edited how data recieves from client to server and server to client again.
+For database there are many tools in the market but we will use (MongoDB) becuase it is easy to understand , its syntax is same as javascript it is easy and somehow we can understand what we are writing
+
+It stored data in the form of document which is great to understand 
+Database is collection of structured information.
+In Database there could be row or column.
+After connecting we are connected to MongoDB Instances. What are these Instances ?
+A MongoDB instance simply means one running MongoDB server process.
+
+Think of it like this:
+
+MongoDB software → installed program
+MongoDB instance → MongoDB currently running on a machine/server
+MongoDB starts a server process. That running server is called a MongoDB instance.
+
+An instance is the running server, while a database is a container for collections and documents inside that server.
+
+Short definition to remember: MongoDB instance = a running MongoDB server that manages databases and handles client connections.
+
+[/** 
+* Paste one or more documents here
+*/
+{
+  "_id": {
+    "$oid": "6a50c5f76bbe3aec9bd8ec8f"
+  }
+}]
+This is by default the document to insert in MongoDB and u can customize it 
+[/** 
+* Paste one or more documents here
+*/
+{
+  "_id": {
+    "$oid": "6a50c5f76bbe3aec9bd8ec8f"
+  },
+  "name" :"java",
+  "price" : 20000,
+  "author" : "Rajat"
+}]
+
+Now the data is persist in your MongoDB file and will remain forever.
+There is MongoDB Shell which helps u to interact with MongoDB bcz we will create read delete the data by writing codes at the end we are coder in mongo shell u can access any file using use it is like terminal   
+ok so if MongoDB app is download and u created some files not file some document in database. then u came in vs code and install the extension of MongoDB then u can simply connect the database and can view edit in vs code 

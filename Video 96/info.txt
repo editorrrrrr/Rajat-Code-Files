@@ -1,0 +1,12 @@
+In this video we will learn about Mongoose this is an ODM(Object Data Modeling) library for MongoDB and Node.js.
+
+Mongoose makes working with MongoDB easier by letting you define a Schema, create a Model, validate data, and perform CRUD operations.
+Mongodb follows a set of Schema but mongoose don't 
+(Schema is basically like the whole data which include address , username , or mobile number then mongodb can verify you if you type your number instead of password)
+
+And the most important term to keep in your mind is mongoose always consider any function if which is written in lowercase (todo.save()) just like that \
+mongoose is like traffic police which indicates the harmful cause before it had even happened it automatically indicates the error in your program or in your database 
+
+Example for real here it is :days : Number
+                             days :"Rajjo
+Here i said that we want date from database so date is number and if you select a date that is number that is fine but if you write a string means a word then the error will pop up and your app will be crashed thats why we use mongoose                             

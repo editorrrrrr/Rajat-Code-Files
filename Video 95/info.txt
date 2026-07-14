@@ -1,0 +1,17 @@
+So in this tutorial we learn how to CRUD in mongodb.
+So CRUD stands for Create , Read , Update , Delete 
+
+ok so if we want to create any function or databases. Just first create an collection in which you want to save the data.
+so now to import data first use (USE function) then simply type (db.courses.insertMany) this is for so much data and you want to import whole the data in one single click. For only one data use (db.courses.insertOne) this will give you priority to import short or one database 
+
+now the second one is read if you want read any file or check if the file imported or not just use this 
+(db.courses.find({ "price": 0 })) it will show you the data which is you imported and you write the condition in this that show me the result of only of those product which price is 0 so these type of complexity we can do in CRUD operation. there is also findMany which introduces all the data which matches your condition.
+
+
+now the third one is update (db.courses.updateMany({"price":0},{$set:{"price":250}}))
+Here is the syntax if you want to update any database you can simply do by using this just first show the database you want to update and then use coma and give set and then do whatever you want.
+
+now the last part is Delete (db.courses.deleteOne({ "price": 0 })) this thier syntax it is same as update the only difference is in update we have set data in delete we just simply type the database we want to delete 
+
+
+That's it for today . Thank You God (My Parents 🙏)

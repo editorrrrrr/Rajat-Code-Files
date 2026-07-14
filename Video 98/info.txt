@@ -1,0 +1,31 @@
+in this video we will learn about tailwind css.
+Tailwind CSS is a utility-first CSS framework. it gives you freedom to give CSS to any of tag or ID's. Doesn't matter it is class , id child selector or parent selector it gives comfortability to everyone. it is a readymade framework.
+First we write CSS normally like this internal , inline or external CSS like this 
+
+(.black{
+       background-color: purple;
+       color: white;
+})
+
+In Tailwind CSS we have to write the like this
+
+(<div class="container text-2xl font-extrabold underline bg-purple-600 ">
+  hey i am rajat from gwalior
+</div>)
+
+
+But now tailwind CSS give us the accountabilty to write the code like this 
+we will talk more about this 
+First we have to add CDN in our VS code 
+
+First step is open terminal in vs code then simply type (npm install -D tailwindcss @tailwindcss)
+this will add tailwind css in our project. The word (D) here tells us that it will install it like (Dev Dependency) means it will run at the time of developing the project and it will not overhead you during the project
+
+After many attempt we have to use the version 3 of tailwindcss because there is a huge diff btw 3 and 4 and Harry is teaching us in version 3 so thats why we will use version 3 after run this code then (npx tailwindcss init) run this it will create an config file for you.
+Then create an src file and then import all the tailwind base , component , utilities 
+@tailwind base;
+@tailwind components;
+@tailwind utilities; 
+by this in this we can write the css if we want and this is not css but will execute in css
+after this if you want to watch or test our HTML file then simple run this code ( npx tailwindcss -i ./src/input.css -o ./src/output.css --watch) what wil this fo it will first watch the HTML File and then it will create an (output.css) file 
+To run we have to include this (["./src/**/*.{html,js}"]) this is the whole code but here we will only write like this (["*.html"]) in content in config file 

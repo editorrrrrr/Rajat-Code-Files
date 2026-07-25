@@ -1,0 +1,3 @@
+Today we will learn about hosting an express app using ubuntu and hostinger hostinger is a website used to host website
+Ubuntu is a free and open-source operating system based on Linux. Think of it as an alternative to Windows or macOS.
+To run our website we have to use some command related to Linux(An Operating system) iske baare me baad me baat karenge 

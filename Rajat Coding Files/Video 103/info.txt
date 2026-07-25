@@ -1,0 +1,6 @@
+so this video is about hosting it will work later for us 
+Hosting means run your website on browser 24 hours but here is bad thing that running your website for 24 hours needs an entire system to give the laptop continously electricty that cost you much more.
+thats where hosting exists in hosting there are many server on the cloud on someone's home or in data center which they give you in some prices like $5/month.
+in which they give you an IP address and password of their system (PC or Computer) that runs for 24 hours without intereption 
+That is what we called hosting your website 
+There are so many ways to run your website but we will discuss about this some other time 

@@ -1,0 +1,9 @@
+ul {
+    display: flex;
+}
+ul{
+   
+    gap: 10px;
+    list-style: none;
+    background-color: beige;
+}

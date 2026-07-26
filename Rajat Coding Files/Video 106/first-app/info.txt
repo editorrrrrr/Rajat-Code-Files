@@ -1,0 +1,35 @@
+today we will learn about what is props , jsx , vite
+
+Vite is a live server for runner for react 
+It gives us creditibility to use any framework it will automatically run on your local host server
+in react there is an entry point like HTML or javascript it looks like
+
+function App() {
+
+  return (
+    <>
+   
+    </>
+  )
+}
+
+export default App
+what we do we do in return function doesnt matter what we have to write 
+React is a library and not a framework that's why it has so much function to make our work easy 
+
+[
+    Library: "You call the library."
+
+    Framework: "The framework calls your code."
+]
+
+JSX is like combination of both HTML and Javascript. but it is much complex that javascript
+we have to close each and every component and every tag otherwise it will give us an error
+in react we have to use classname instead of simple class becuase in javascript there is already class present 
+and if we have to same component like div then we will use those by using wrapper 
+means we have to wrap it in a wrapper <> </> like this 
+
+
+Props are just like to insert a value in any of those attribute simply just create an variable and distribute it over the attributes 
+
+JAY SHREE RAM . GLORY TO LORD RAM

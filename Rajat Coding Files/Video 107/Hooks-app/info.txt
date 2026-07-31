@@ -1,0 +1,3 @@
+In this video we will talk about Hooks And State
+Hooks basically creates an self understanding for beginners and it gives us functionality to create any hooks on our own 
+Hooks always remember when value is changes like if initial value is 0 and we give it a setvalue 10 then it will remember the value everytime we changed. it let you use state and other React features in functional components without writing class components.

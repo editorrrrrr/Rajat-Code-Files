@@ -1,0 +1,11 @@
+Today we will learn about useEffect function in react js how to use it and how to run the script without any error 
+UseEffect is a function in react which gives us access to create normal things like alert , prompt , console log also 
+so these types of operation we can create in react js usign useEffect 
+in react js there is a concept not actually concept but a function liek structure which is strict mode it is useful in development not production strict mode works two times it runs first time as to verify the value and runs second times to actual for running without any interruption 
+
+  useEffect(() => {
+   alert("Count was changed")
+   setcolor(color + 1)
+  }, [count])
+
+by using this we can connect any usestate with any useffect and can render it without any delay it simplifies us that if we try to changed the count color will also changed along with count because we give and set the value of setcolor in our useEffect property 

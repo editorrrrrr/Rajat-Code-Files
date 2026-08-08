@@ -1,0 +1,23 @@
+in this video we will talk about event handling in react :
+event handling is about targeting a button or any tag when (mostly button) that what we have to do with them about dark mode on off.
+
+In event handling if we want to type our name in input name bar so we have to use (e) in arrow function and use target value in arrow function
+Because in name or string changable thing we use a default value of name which keeps the value as it is Because in react default value name remains as we consider it in our arrow function
+
+if we want to create a name email phone bar to type them like this:
+
+<input type="text" name='email' value={form.email} onChange={handleName} />
+<input type="text" name='phone' value={form.phone} onChange={handleName} />
+
+then we have to assign our value in arrow function and an function like this :
+ const handleName = (e)=>{
+    setform({...form , [e.target.name]:e.target.value})
+    console.log(form)
+  }
+
+then if type our name in column box and if we try to see the console then it will run a little bit slow the reason is Because when we assign our value in our function the value instantly assign in the column but the function (setform) is asynchronous will take a little time and the result will look like this :
+{email: 'mathurrajat35@gmail.com', phone: '895926763'}
+you would be thinking that where is last digit of mobile number so the reason is console log is faster than setfrom asynchronous function thats why it didnt show the last digit but if we give a space in the first column then it will be fix 
+
+and if we want to target any no. of element with only one handle then we can do it by above example
+and if we have empty default value then we can fix it by using this 

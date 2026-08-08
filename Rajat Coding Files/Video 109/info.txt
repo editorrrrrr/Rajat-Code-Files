@@ -1,0 +1,34 @@
+in today's video we will talk about useRef in react js in react if we tap a button or click a button the whole code is rendering itself means it is running again and again and if we create a alert about render then we get to know that how many times it is running
+
+We can use (useRef) by this command [const a = useRef(0)] 
+this means a value is assign as 0 
+jab bhi useRef ki value change krenge tab useRef trigger nhi krega matlab tab render nhi hoga 
+matlab hua kya tha jab ham ket krke ek variable bana rhe the tab function baar baar render ho rha tha jiski vajah se hamara system usi loop me fas gya tha jis vajah se ham apni initial value hi run kar paa rhe the isliye react ne hame ek hook jiska naam useRef hai vo diya iska kaam h ki agr ham ko koi value change krni hai to use ek initial value assign kr do or fir (.current) use krke use update or use kro 
+
+This is First use case of useRef
+
+function App() {
+  const [count, setCount] = useState(0)
+  const a = useRef(0)
+
+  useEffect(() => {
+    a.current = a.current+1
+   console.log(`Your value is rendering the no. is ${a.current}`)
+  })}
+  
+
+Now we will jump onto second use case of useRef
+
+<button
+        ref={ref}
+          type="button"
+          className="counter"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          Count is {count}
+</button>
+Here you can see a button is introduced in our code all the necessary things present in here now if i want to focus only on button i don't require to do DOM simply i will ref value in button and then i target it writing this 
+
+ref.current.style.backgroundColor = "yellow"
+
+this could be more helpful to do DOM instead of writing heavy javascript for DOM

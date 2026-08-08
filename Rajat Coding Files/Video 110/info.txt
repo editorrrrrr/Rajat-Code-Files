@@ -1,0 +1,70 @@
+in this video we will learn about Conditional rendering and rendering lists in react 
+so to render any function or lists we can use template literals in our code like this (we can call this first case) :
+({showbtn ? <button type="button" className="counter">I will show only when second button is clicked</button> : "thenga"})
+
+this is second case of rendering in react js is like this :
+
+({showbtn && <button type="button" className="counter">;showbtn is clicked</button>})
+
+in the first case the question mark sign represent if else condition with colon symbol which means if this is true then run it otherwise run the second condition which is after colon 
+
+and in second case the && symbol is representing only the true condition of code means if the value is true then only run the script otherwise is not even choice here and for some add on i created a toggle effect on the buttons (i created by following tutorials not on my own) which is :
+    <button
+          type="button"
+          className="counter"
+          onClick={() => setshowbtn(!showbtn)}
+        >
+          Toggle showbtn{}
+    </button>
+
+in coding if you click enter after assigning return function then it wlll show empty showcase that means if you write this code 
+
+return 
+<div classname ....etc 
+this will cause an empty showcase and will show nothing 
+That's why you should have use parentheses after return like this 
+return 
+(<div className..) 
+or just simply put your element in the same row along with return
+
+now we will render list in react js 
+this process could be overwhelming but we have to do it for ourself otherwise things won't work 
+we render list by using (.map) if we created some data according to our limitations then we can show this by
+(.map) like this :
+
+      {todos.map(todo=>{
+      return <Todo todo = {todo}/>
+      })}
+list like this :
+
+ const [todos, settodos] = useState([
+    {
+      title: "hey i am peon",
+      desc: "Hey i am description",
+    },
+    {
+      title: "hey i employee",
+      desc: "Hey i am description but i am employee",
+    },
+    {
+      title: "hey i am boss",
+      desc: "Hey i am description but i am boss",
+    },
+  ])      
+
+and then attach this into a new :
+
+    const Todo = ({ todo }) => {
+    return (<>
+      <div className="todo">{todo.title}</div>
+      <div className="todo">{todo.desc}</div>
+    </>)
+  }
+
+and to get errorless code we should give a unique key to returning phase 
+like this :
+ {todos.map(todo=>{
+      return <Todo key = {todo.title} todo = {todo}/>
+      })}
+
+and if you click enter after return then it will not show our data then always use parentheses      

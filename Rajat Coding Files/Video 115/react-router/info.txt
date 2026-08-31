@@ -1,0 +1,72 @@
+In this video we learn about how we create multiple pages for our website using react 
+suppose we have to make some pages 1. Home , 2. About us , 3. Login and more 
+now for this i have to make three file using react then i will import it into the main file and then i will install react router 
+
+React router is the facility provide by the react to create multiple pages then we will import it and the react provider in the main file then we create a function and will import the functionality in these brackets then will import the file in this but here is a catch suppose you have to create a navbar and want to put all the things in only one page like html then first create the necesarry file then import it like link as we do in html using ankertag and href part but here we will use Link and to instead of these two 
+
+Now the main file we will give the access of the necesarry file to the main file then will write path and element type for our pages (in path we will target the page (is it login , about , Home) then in element we will give the file address)
+
+Now i will show how to do this 
+
+
+
+import Navbar from './components/Navbar'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Aboutme from './components/Aboutme'
+import Home from './components/Home'
+import Login from './components/Login'
+import User from './components/User'
+
+function App() {
+  const router = createBrowserRouter([
+    {
+      path: "/",
+      element: <><Navbar /><Home /></>
+    },
+    {
+      path: "/login",
+      element: <><Navbar /><Login /></>
+    },
+    {
+      path: "/aboutme",
+      element: <><Navbar /><Aboutme /></>
+    },
+    {
+      path: "/user/:username",
+      element: <><Navbar /><User /></>
+    }
+  ])
+
+  return (
+    <>
+      <RouterProvider router={router} /> 
+    </>
+  )
+}
+
+export default App
+
+
+this is the big boss
+
+this code is from the main file (all the things we do in main.jsx but here for learning we do this in app.jsx)
+
+
+import React from 'react'
+import { Link } from 'react-router-dom'
+const Navbar = () => {
+  return (
+    <div>
+      <nav>
+        <Link to="/home"><li>Home </li></Link>
+        <Link to="/Aboutme"><li>Aboutme</li></Link>
+        <Link to="/Login"><li>Login</li></Link>
+      </nav>
+    </div>
+  )
+}
+
+export default Navbar
+
+
+this is from the main page containing the necesarry elements 

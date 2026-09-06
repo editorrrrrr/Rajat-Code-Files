@@ -1,0 +1,45 @@
+in this video we learn about useContext 
+it is basically a react library or react model which allows us to use any function or state from any file of jsx to any file of jsx means if i create a button in button.jsx and i have to use it in navbar.jsx then i will do only one thing that is using of useContext it's syntax is a little bit complex but we will see 
+
+suppose this is already made button by library 
+
+ <button
+          type="button"
+          className="counter"
+          onClick={() => setCount((count) => count + 1)}
+        >
+          Count is {count}
+</button>
+
+it is in the app.jsx and i want to access it in component.jsx then what i will do is
+first i will create an js file and write this code
+
+import { createContext } from "react";
+
+export const counterContext = createContext(0)
+
+here we simply first create a context. 
+
+now i will import it in app.jsx 
+
+import { counterContext } from './counter/context'
+<counterContext.Provider value={count}></counterContext.Provider>
+
+now we have completed two main step creating and importing context now the most important step is use context 
+i have to use it in component then i will write it 
+
+
+import React ,{ useContext } from 'react'
+
+
+first import then create a const function then use it 
+
+
+const counter = useContext(counterContext)  
+
+
+<div>
+      {counter}
+</div>
+
+This is the full process of how to use useContext in react.

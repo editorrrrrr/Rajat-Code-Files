@@ -1,0 +1,23 @@
+in this chapter we will learn about useMemo how to use this and what is this 
+useMemo is a react framework that remember the cache of the data of any function of expensive calculation that will repeat again and again it remembers the pattern and cache that it will not reload the server if any button is click (as you know when react button or any container or code runs it will run the whole code)
+
+
+Like this function it is very expensive/extensive calculation
+const nums = new Array(30_000_000).fill(0).map((_, i)=>{
+  return{
+    index:i,
+    isMagical: i===29_000_000
+  }
+})
+
+it means the numbers will run to 30 million operation as the code runs and whenever we will press or type something in the inbox it will run again means it will run with server (sync with server) the time we press the button 
+that will make very expensive code and can damage the cpu to do this calculation again and again when button are pressed that's why we use (useMemo) 
+it will stop the code functionality to run again again when the code run it will run only first time when the server start
+
+to use this 
+
+ const [numbers, setNumbers] = useState(nums)
+
+const magical = useMemo(() => numbers.find(item=>item.isMagical===true), [])
+
+that's it this all we need to delay the calculation 
